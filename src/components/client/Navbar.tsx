@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Fjalla_One } from 'next/font/google';
 
 const fjallaOne = Fjalla_One({
+  subsets: ['latin'],
   weight: ['400'],
 });
 

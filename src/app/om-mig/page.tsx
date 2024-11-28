@@ -40,7 +40,7 @@ export default function OmMig() {
         <div className="max-w-6xl mx-auto mt-8 px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Om mig section */}
-            <div className="font-caslon text-custom-blue space-y-6">
+            <div className="text-custom-blue space-y-6">
               <h1 className="text-3xl lg:text-4xl font-caslon text-custom-blue mb-6">
                 Om mig
               </h1>
@@ -60,7 +60,7 @@ export default function OmMig() {
             </div>
 
             {/* Utställningar section */}
-            <div className="font-caslon text-custom-blue space-y-6">
+            <div className="text-custom-blue space-y-6">
               <h2 className="text-3xl lg:text-4xl font-caslon mb-10">
                 Utställningar
               </h2>

@@ -12,16 +12,13 @@ const libreCaslonText = Libre_Caslon_Text({
 export const metadata: Metadata = {
   title: 'Matilda Björk',
   description: 'Personal website of Matilda Björk',
-  metadataBase: new URL(
-    'https://hagelstudio-nqf91z4d6-fredrik-ps-projects.vercel.app/',
-  ),
   openGraph: {
     title: 'Matilda Björk',
     description: 'Personal website of Matilda Björk',
     url: 'https://matildabjork.se',
     images: [
       {
-        url: 'https://hagelstudio.com/opengraph-image.png',
+        url: '',
       },
     ],
     locale: 'sv_SE',
