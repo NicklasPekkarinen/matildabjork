@@ -16,10 +16,12 @@ const SlidingExhibition = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}
       >
-        <div className="text-sm text-custom-blue space-y-2 mt-48">
-          <p>Aktuell utställning: </p>
-          <p>Galleri Åkern, Åkarp</p>
-          <p>9 mars - 17 mars 2024</p>
+        <div className="text-sm text-custom-blue space-y-2 mt-32">
+          <p className="font-bold">Aktuella utställningar</p>
+          <p>Galleri Viken, Viken</p>
+          <p>30 november - 15 december 2024</p>
+          <p className="pt-4">KKAM Höganäs, Höganäs</p>
+          <p>16 november - 29 december 2024</p>
         </div>
       </div>
     </div>

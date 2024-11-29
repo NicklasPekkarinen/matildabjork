@@ -60,16 +60,6 @@ export default function Navbar() {
         </div>
         <div className="text-sm text-center py-2">
           <Link
-            href="https://www.instagram.com/matildabjork.art"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mt-2 lg:mr-4 lg:inline-block lg:mt-0 hover:text-custom-light-blue"
-          >
-            Instagram
-          </Link>
-        </div>
-        <div className="text-sm text-center py-2">
-          <Link
             href="/contact"
             className="block mt-2 mb-4 md:mb-0 lg:mr-4 lg:inline-block lg:mt-0 hover:text-custom-light-blue"
           >
