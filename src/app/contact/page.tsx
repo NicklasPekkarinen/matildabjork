@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Footer from '@/components/server/Footer';
 
 export const metadata: Metadata = {
@@ -25,9 +24,9 @@ export default function Contact() {
                   Email:
                   <a
                     href="mailto:matilda@konstbybjork.se"
-                    className="hover:opacity-80 transition-opacity"
+                    className="hover:opacity-80 transition-opacity ml-1"
                   >
-                    matilda@konstbybjork.se
+                    matildabjork6@hotmail.se
                   </a>
                 </p>
                 <p>
@@ -36,7 +35,7 @@ export default function Contact() {
                     href="https://www.instagram.com/konstbybjork"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
+                    className="hover:opacity-80 transition-opacity ml-1"
                   >
                     @konstbybjork
                   </a>
@@ -48,10 +47,17 @@ export default function Contact() {
 
             <div className="text-sm space-y-6 text-custom-blue mt-10">
               <p>
-                Följ gärna mitt konstnärskap på Instagram där jag regelbundet
-                delar med mig av nya verk och utställningar.
+                Följ gärna mitt konstnärskap på
+                <a
+                  href="https://www.instagram.com/konstbybjork"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity ml-1"
+                >
+                  Instagram
+                </a>
+                för att regelbundet delas med mig av nya verk och utställningar.
               </p>
-              <p>Jag tar även emot beställningar av personliga motiv.</p>
             </div>
           </div>
         </div>
