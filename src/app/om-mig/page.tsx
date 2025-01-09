@@ -65,6 +65,13 @@ export default function OmMig() {
                 Utställningar
               </h2>
               <div className="text-sm space-y-6">
+              <div className="flex">
+                  <div className="mr-8">2025</div>
+                  <div>
+                    <p>Stockholms konstsalong</p>
+                    <p className="italic">Bedömd gruppuställning</p>
+                  </div>
+                </div>
                 <div className="flex">
                   <div className="mr-8">2024</div>
                   <div>

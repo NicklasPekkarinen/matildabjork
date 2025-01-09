@@ -37,34 +37,41 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
+      {/* Mobile Menu */}
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } md:w-full lg:flex lg:items-center lg:w-auto text-custom-blue flex flex-col absolute top-full left-0 bg-white md:bg-transparent md:absolute md:right-0  md:rounded-lg z-50 w-full md:w-auto md:flex-row md:pl-4 md:py-4 md:top-auto md:left-auto md:right-auto md:mt-20`}
+        } sm:fixed inset-0 bg-white flex flex-col items-center justify-center space-y-8 text-lg md:text-sm md:w-full lg:flex lg:items-center lg:w-auto text-custom-blue flex flex-col absolute top-full left-0 md:bg-transparent md:absolute md:right-0  md:rounded-lg z-50 w-full md:w-auto md:flex-row md:pl-4 md:py-4 md:left-auto md:right-auto md:top-10 md:mt-0 `}
       >
+        {/* Close Button */}
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-6 right-6 text-custom-blue"
+          aria-label="Stäng meny"
+        />
         <div className="text-sm text-center py-2">
-          <Link
-            href="/om-mig"
-            className="block mt-4 md:mt-2 lg:mr-4 lg:inline-block lg:mt-0 hover:text-custom-light-blue"
-          >
-            Om mig
-          </Link>
+        <Link
+          href="/om-mig"
+          className="block mt-4 sm:text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
+        >
+          Om mig
+        </Link>
         </div>
         <div className="text-sm text-center py-2">
-          <Link
-            href="/galleri"
-            className="block mt-2 lg:mr-4 lg:inline-block lg:mt-0 hover:text-custom-light-blue"
-          >
-            Galleri
-          </Link>
+        <Link
+          href="/galleri"
+          className="block mt-4 sm:text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
+        >
+          Galleri
+        </Link>
         </div>
         <div className="text-sm text-center py-2">
-          <Link
-            href="/contact"
-            className="block mt-2 mb-4 md:mb-0 lg:mr-4 lg:inline-block lg:mt-0 hover:text-custom-light-blue"
-          >
-            Kontakt
-          </Link>
+        <Link
+          href="/contact"
+         className="block mt-4 text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
+        >
+          Kontakt
+        </Link>
         </div>
       </div>
     </nav>

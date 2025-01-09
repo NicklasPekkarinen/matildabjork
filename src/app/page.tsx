@@ -18,10 +18,9 @@ const SlidingExhibition = () => {
       >
         <div className="text-sm text-custom-blue space-y-2 mt-32">
           <p className="font-bold">Aktuella utställningar</p>
-          <p>Galleri Viken, Viken</p>
-          <p>30 november - 15 december 2024</p>
-          <p className="pt-4">KKAM Höganäs, Höganäs</p>
-          <p>16 november - 29 december 2024</p>
+          <p>Stockholms konstsalong</p>
+          <p>29 mars - 6 april 2025</p>
+          
         </div>
       </div>
     </div>

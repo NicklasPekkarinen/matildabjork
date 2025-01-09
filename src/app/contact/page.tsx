@@ -47,16 +47,7 @@ export default function Contact() {
 
             <div className="text-sm space-y-6 text-custom-blue mt-10">
               <p>
-                Följ gärna mitt konstnärskap på
-                <a
-                  href="https://www.instagram.com/konstbybjork"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity ml-1"
-                >
-                  Instagram
-                </a>
-                för att regelbundet delas med mig av nya verk och utställningar.
+                Följ gärna mitt konstnärskap på Instagram för att regelbundna uppdateringar kring nya verk och utställningar.
               </p>
             </div>
           </div>

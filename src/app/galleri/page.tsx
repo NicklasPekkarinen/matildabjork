@@ -19,6 +19,34 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   {
+    src: '/gallery/image16.jpg',
+    alt: 'Akvarell 9',
+    title: 'Utan titel',
+    size: '28x38 cm',
+    year: '2024',
+  },
+  {
+    src: '/gallery/image15.jpg',
+    alt: 'Akvarell 9',
+    title: 'Marby gamla kyrka',
+    size: '28x38 cm',
+    year: '2024',
+  },
+  {
+    src: '/gallery/image14.jpg',
+    alt: 'Akvarell 9',
+    title: 'Hemma på gårn',
+    size: '28x38 cm',
+    year: '2024',
+  },
+  {
+    src: '/gallery/image13.jpg',
+    alt: 'Akvarell 9',
+    title: 'Värsångsflon',
+    size: '38x56 cm',
+    year: '2024',
+  },
+  {
     src: '/gallery/image1.jpg',
     alt: 'Akvarell 1',
     title: 'I närheten av Fröå gruva',
@@ -77,8 +105,22 @@ const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/image9.jpg',
     alt: 'Akvarell 9',
-    title: 'Höstfjäll',
-    size: '50x70 cm',
+    title: 'Utan titel',
+    size: '28x38 cm',
+    year: '2024',
+  },
+  {
+    src: '/gallery/image10.jpg',
+    alt: 'Akvarell 10',
+    title: 'Utan tital',
+    size: '28x38 cm',
+    year: '2024',
+  },
+  {
+    src: '/gallery/image11.jpg',
+    alt: 'Akvarell 11',
+    title: 'Utan titel',
+    size: '28x38 cm',
     year: '2024',
   },
 ];
