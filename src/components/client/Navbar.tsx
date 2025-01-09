@@ -12,7 +12,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative flex items-center justify-between md:flex-col md:justify-center flex-wrap bg-transparent z-10 p-6 fixed w-full">
+    <nav className="relative flex items-center justify-between flex-wrap bg-transparent z-10 p-6 fixed w-full md:flex-col md:justify-center">
+      {/* Logo */}
       <div className="flex flex-shrink-0 mr-6 md:mr-0 md:mb-4">
         <Link href="/">
           <span
@@ -22,7 +23,9 @@ export default function Navbar() {
           </span>
         </Link>
       </div>
-      <div className="block lg:hidden ml-auto">
+
+      {/* Hamburger Button (Visible on Small Screens Only) */}
+      <div className="block md:hidden ml-auto">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center px-3 py-2 hover:text-stone-600 hover:border-white"
@@ -37,41 +40,45 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-      {/* Mobile Menu */}
+
+      {/* Menu */}
       <div
         className={`${
-          isOpen ? 'block' : 'hidden'
-        } sm:fixed inset-0 bg-white flex flex-col items-center justify-center space-y-8 text-lg md:text-sm md:w-full lg:flex lg:items-center lg:w-auto text-custom-blue flex flex-col absolute top-full left-0 md:bg-transparent md:absolute md:right-0  md:rounded-lg z-50 w-full md:w-auto md:flex-row md:pl-4 md:py-4 md:left-auto md:right-auto md:top-10 md:mt-0 `}
+          isOpen ? 'fixed inset-0 bg-white flex flex-col z-50' : 'hidden'
+        } md:flex md:flex-col md:w-auto md:items-center md:relative md:bg-transparent md:z-30`}
       >
-        {/* Close Button */}
+        {/* Close Button for Mobile */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-6 right-6 text-custom-blue"
-          aria-label="Stäng meny"
-        />
-        <div className="text-sm text-center py-2">
-        <Link
-          href="/om-mig"
-          className="block mt-4 sm:text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
+          className="absolute top-4 right-4 text-gray-600 text-xl md:hidden"
+          aria-label="Close Menu"
         >
-          Om mig
-        </Link>
-        </div>
-        <div className="text-sm text-center py-2">
-        <Link
-          href="/galleri"
-          className="block mt-4 sm:text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
-        >
-          Galleri
-        </Link>
-        </div>
-        <div className="text-sm text-center py-2">
-        <Link
-          href="/contact"
-         className="block mt-4 text-3xl md:text-sm lg:mr-4 lg:inline-block lg:mt-4 text-center hover:text-custom-light-blue"
-        >
-          Kontakt
-        </Link>
+          ✕
+        </button>
+
+        {/* Menu Links */}
+        <div className="flex flex-col space-y-4 mt-20 md:flex-row md:space-y-0 md:space-x-8 md:mt-4 md:mb-8">
+          <Link
+            href="/om-mig"
+            className="md:text-custom-blue text-sm font-bold text-center hover:text-custom-light-blue"
+            onClick={() => setIsOpen(false)}
+          >
+            Om mig
+          </Link>
+          <Link
+            href="/galleri"
+            className="md:text-custom-blue text-sm font-bold text-center hover:text-custom-light-blue"
+            onClick={() => setIsOpen(false)}
+          >
+            Galleri
+          </Link>
+          <Link
+            href="/contact"
+            className="md:text-custom-blue text-sm font-bold text-center hover:text-custom-light-blue"
+            onClick={() => setIsOpen(false)}
+          >
+            Kontakt
+          </Link>
         </div>
       </div>
     </nav>

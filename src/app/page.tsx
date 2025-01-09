@@ -10,7 +10,7 @@ const SlidingExhibition = () => {
   }, []);
 
   return (
-    <div className="w-full text-center">
+    <div className="w-full text-center md:mt-10 md:absolute">
       <div
         className={`transform transition-transform duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -20,7 +20,6 @@ const SlidingExhibition = () => {
           <p className="font-bold">Aktuella utställningar</p>
           <p>Stockholms konstsalong</p>
           <p>29 mars - 6 april 2025</p>
-          
         </div>
       </div>
     </div>
